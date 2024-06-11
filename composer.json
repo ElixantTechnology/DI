@@ -1,0 +1,38 @@
+{
+  "name":          "elixant/di",
+  "description":   "A Service Container built on top of the Laravel Container.",
+  "type":          "library",
+  "authors":       [
+    {
+      "name":  "Alexander Schmautz",
+      "email": "a.schmautz91@gmail.com"
+    }
+  ],
+  "prefer-stable": true,
+  "require":       {
+    "php": "^8.2",
+    "elixant/utility": "dev-main",
+    "illuminate/container": "^11.10"
+  },
+  "require-dev":   {
+    "phpunit/phpunit": "^9.6",
+    "symfony/var-dumper": "^7.0"
+  },
+  "autoload":      {
+    "psr-4": {
+      "Elixant\\DI\\": "src/"
+    }
+  },
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../*/",
+      "options": {
+        "symlink": true
+      }
+    }
+  ],
+  "config":        {
+    "optimize-autoloader": true
+  }
+}
